@@ -37,7 +37,7 @@ export async function getAddressFromCEP(req: AuthenticatedRequest, res: Response
       logradouro: address.logradouro,
       complemento: address.complemento,
       bairro: address.bairro,
-      cidade: address.cidade,
+      cidade: address.localidade,
       uf: address.uf,
     };
     res.status(httpStatus.OK).send(returnAddress);
